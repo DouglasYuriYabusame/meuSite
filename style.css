@@ -1,0 +1,171 @@
+:root{
+    --background-menu: rgb(36, 33, 33);
+    --background-padrao: rgb(84, 82, 82);
+    --corDaLetraMenu: #bdb7b7;
+    --corDaLetraPadrao: rgb(163, 150, 150);    
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--corDaLetraPadrao)
+}
+
+a{
+    text-decoration: none;
+    color: var(--corDaLetraMenu);
+}
+
+body{
+    background-color: var(--background-padrao);
+}
+
+.conteudo {    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+}
+/*#region Cabeçalho */
+
+.logo{    
+    display: flex;
+    width: 30% ;
+    align-items: center;
+}
+
+.menu{    
+    background-color: var(--background-menu);
+    color: var(--corDaLetraMenu);
+    display: flex;
+    height: 65px;
+    padding: 15px;
+}
+
+.navegacao{    
+    display:flex;
+    justify-content: end;    
+    align-items: center;
+    width: 70%;    
+}
+
+#navId{
+    list-style: none;
+    padding:0;
+}
+
+#navId li{
+    display: inline;
+}
+
+#navId li a{    
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navId li a:hover{    
+    text-shadow: 2px 2px 5px var(--corDaLetraMenu);        
+}
+
+/*#endregion*/
+
+/*#region home */
+
+.home{            
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagemPerfil img{    
+    border-radius: 50%;
+    margin: 15px;
+    
+}
+
+.dadosPerfil{
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background-menu);
+    padding: 15px;    
+}
+
+.dadosPerfil span{    
+    margin-bottom: 10px;
+}
+
+/*#endregion*/
+
+/*#region sobre */
+
+.sobre{
+    max-width: 1200px;
+    display: flex;    
+    margin: 25px;    
+}
+
+.dadosSobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    padding: 15px;  
+    background-color: var(--background-menu);
+    border-radius: 25px;
+}
+
+.dadosSobre h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.dadosSobre p{
+    text-align: justify;
+    line-height: 25px;
+    margin-bottom: 15px;
+    text-indent: 25px;    
+}
+
+/*#endregion */
+
+/*#region Contato */
+
+.contato{
+    align-items: center;
+    margin: 10px;
+    margin-top: 200px;
+}
+
+.contato h2{
+    margin: 15px;
+    text-align: center;
+}
+
+.contato a{
+    padding-inline: 15px;
+}
+
+/*#endregion */
+
+/*#region rodapé*/
+.rodape{    
+    background-color: var(--background-menu);
+    color: var(--corDaLetraMenu);
+    font-size: 0.8em;
+    text-align: center;
+    padding: 15px;
+}
+
+/*#endregion*/
+
+
+
+
+
+
